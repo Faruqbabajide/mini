@@ -27,4 +27,9 @@ router.put('/:id/cancel', (req, res) => {
     res.json(order);
 });
 
+// Get list of orders
+router.get('/', (req, res) => {
+    res.json(orders);
+});
+
 module.exports = router;
